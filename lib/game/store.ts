@@ -464,7 +464,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
 
     const newBoats = [...playerAfterSpend.ownedBoats]
     const newUpgrades = { ...boat.upgrades, [upgradeType]: currentLevel + 1 }
-    let updatedBoat = { ...boat, upgrades: newUpgrades }
+    const updatedBoat = { ...boat, upgrades: newUpgrades }
     
     switch (upgradeType) {
       case 'engine':
@@ -972,7 +972,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
     const boat = player.ownedBoats.find(b => b.id === player.currentBoatId)
     const weatherMods = WEATHER_MODIFIERS[player.weather.current.type]
     const log = [...combat.log]
-    let { enemy, playerHealth, round, fleeChance } = combat
+    let { enemy, playerHealth } = combat
+    const { round, fleeChance } = combat
     let result: CombatState['result'] = 'ongoing'
 
     if (action === 'flee') {

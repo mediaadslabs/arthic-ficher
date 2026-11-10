@@ -377,7 +377,7 @@ export function StartMenu({ onStartGame }: StartMenuProps) {
                   <div className="text-xs text-slate-400 space-y-1">
                     <p>Free tier includes: 500MB database, 5GB bandwidth, 50,000 monthly active users</p>
                     <ol className="list-decimal pl-4 mt-2 space-y-1">
-                      <li>Go to <a href="https://supabase.com" target="_blank" className="text-cyan-400 hover:underline">supabase.com</a> and sign up for free</li>
+                      <li>Go to <a href="https://supabase.com" target="_blank" className="text-cyan-400 hover:underline" rel="noreferrer">supabase.com</a> and sign up for free</li>
                       <li>Create a new project (choose a strong database password)</li>
                       <li>Go to Project Settings → API → Project URL and anon/public key</li>
                       <li>Copy the Project URL and anon key</li>
@@ -404,7 +404,7 @@ export function StartMenu({ onStartGame }: StartMenuProps) {
                   <div className="text-xs text-slate-400 space-y-1">
                     <p>Free tier: 50,000 documents, 5GB storage, 100K monthly active users</p>
                     <ol className="list-decimal pl-4 mt-2 space-y-1">
-                      <li>Go to <a href="https://appwrite.io" target="_blank" className="text-cyan-400 hover:underline">appwrite.io</a> and create a free account</li>
+                      <li>Go to <a href="https://appwrite.io" target="_blank" className="text-cyan-400 hover:underline" rel="noreferrer">appwrite.io</a> and create a free account</li>
                       <li>Create a new project</li>
                       <li>Set up a database, create a collection called <code className="text-cyan-300">saves</code></li>
                       <li>Add attributes: slotNumber (integer), name (string), playerData (string/json), timestamp (integer), playTime (integer)</li>
@@ -422,7 +422,7 @@ export function StartMenu({ onStartGame }: StartMenuProps) {
                   <div className="text-xs text-slate-400 space-y-1">
                     <p>Free Spark plan: 1GB Firestore, 10GB download, 10K writes/day</p>
                     <ol className="list-decimal pl-4 mt-2 space-y-1">
-                      <li>Go to <a href="https://firebase.google.com" target="_blank" className="text-cyan-400 hover:underline">firebase.google.com</a> and create a free account</li>
+                      <li>Go to <a href="https://firebase.google.com" target="_blank" className="text-cyan-400 hover:underline" rel="noreferrer">firebase.google.com</a> and create a free account</li>
                       <li>Create a Firebase project</li>
                       <li>Enable Firestore Database (start in test mode)</li>
                       <li>Register a web app to get your config (apiKey, authDomain, projectId, etc.)</li>
@@ -440,7 +440,7 @@ export function StartMenu({ onStartGame }: StartMenuProps) {
                   <div className="text-xs text-slate-400 space-y-1">
                     <p>Free tier: 2GB database, 10GB file storage, unlimited users</p>
                     <ol className="list-decimal pl-4 mt-2 space-y-1">
-                      <li>Go to <a href="https://nhost.io" target="_blank" className="text-cyan-400 hover:underline">nhost.io</a> and sign up for free</li>
+                      <li>Go to <a href="https://nhost.io" target="_blank" className="text-cyan-400 hover:underline" rel="noreferrer">nhost.io</a> and sign up for free</li>
                       <li>Create a new project</li>
                       <li>Get your GraphQL endpoint and admin secret from Settings</li>
                       <li>Use the Hasura console to create the <code className="text-cyan-300">saves</code> table</li>

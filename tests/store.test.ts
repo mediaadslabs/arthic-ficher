@@ -49,7 +49,7 @@ describe('GameStore core functionality', () => {
     // Ensure sufficient gold
     store.addGold(200);
     // Re-fetch player state after addGold to ensure goldBefore is accurate
-    let { player: playerAfterAdd } = useGameStore.getState();
+    const { player: playerAfterAdd } = useGameStore.getState();
     const goldBefore = playerAfterAdd?.gold ?? 0;
 
     const success = store.buyBoat('dinghy');
@@ -68,7 +68,7 @@ describe('GameStore core functionality', () => {
     // Add initial gold
     store.addGold(200); // Gold becomes 250.
     // Ensure state is updated after addGold
-    let { player: playerAfterAdd } = useGameStore.getState();
+    const { player: playerAfterAdd } = useGameStore.getState();
     const goldAfterAdd = playerAfterAdd?.gold ?? 0; // Should be 250
 
     // Buy the boat
